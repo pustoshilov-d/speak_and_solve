@@ -1,0 +1,18 @@
+{
+  "ignore": ["node_modules"],
+  "env": {
+    "NODE_ENV":"development",
+    "PORT": 3000,
+    "CONFIRMATION": "81519778",
+    "GROUP": 189695961,
+    "TOKEN": "f712d9e8b58dbd4af26524940054159ddd9bc8451e3446a69287c455172a0c67991c85c1402ecb38e1a4d",
+    "CHAT": "vk.cc/a7qtae",
+    "HOST": "127.0.0.1",
+    "PORT_DB": "5432",
+    "DATABASE": "Speak_and_Solve",
+    "USER": "postgres",
+    "PASSWORD": "12345678"
+  },
+  "ext": ".js,.json",
+  "watch": ",/"
+}
