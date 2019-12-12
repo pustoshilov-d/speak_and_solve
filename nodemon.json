@@ -7,11 +7,12 @@
     "GROUP": 189695961,
     "TOKEN": "f712d9e8b58dbd4af26524940054159ddd9bc8451e3446a69287c455172a0c67991c85c1402ecb38e1a4d",
     "CHAT": "vk.cc/a7qtae",
-    "DATABASE_URL": "127.0.0.1",
+    "DATABASE_URL": "postgres://epceoialxeuhiq:b047274c4be4cf36ad688ace5c0981bb096ee8dcdbcd5fb12d2d2d926a1297e9@ec2-54-247-96-169.eu-west-1.compute.amazonaws.com:5432/dachskrs8tgh7o",
+    "HOST": "ec2-54-247-96-169.eu-west-1.compute.amazonaws.com",
     "PORT_DB": "5432",
-    "DATABASE": "Speak_and_Solve",
-    "USER": "postgres",
-    "PASSWORD": "12345678"
+    "DATABASE": "dachskrs8tgh7o",
+    "USER": "epceoialxeuhiq",
+    "PASSWORD": "b047274c4be4cf36ad688ace5c0981bb096ee8dcdbcd5fb12d2d2d926a1297e9"
   },
   "ext": ".js,.json",
   "watch": ",/"

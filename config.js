@@ -4,7 +4,7 @@ module.exports = {
     TOKEN: process.env.TOKEN,
     GROUP: process.env.GROUP,
     CHAT: process.env.CHAT,
-    HOST: process.env.DATABASE_URL,
+    HOST: process.env.HOST,
     PORT_DB: process.env.PORT_DB,
     DATABASE: process.env.DATABASE,
     USER: process.env.USER,
