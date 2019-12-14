@@ -1,5 +1,5 @@
 const api = require('vk-easy');
-const {TOKEN, GROUP} = require('./config');
+const {TOKEN, GROUP} = require('../config');
 
 const keyboards = [];
 keyboards['ok_rules'] = JSON.stringify({
@@ -20,19 +20,19 @@ keyboards['categories'] = JSON.stringify({
         [{
             action: {
                 type: "text",
-                label: "Смерть родственника",
+                label: "Свидетельство смерти",
                 payload: {
                     command: "categories",
-                    type: "1"}
+                    type: "Свидетельство смерти"}
             },
         }],
         [{
             action: {
                 type: "text",
-                label: "Свидетельство смерти",
+                label: "Смерть родственника",
                 payload: {
                     command: "categories",
-                    type: "2"}
+                    type: "Смерть родственника"}
             },
         }],
         [{
@@ -41,8 +41,41 @@ keyboards['categories'] = JSON.stringify({
                 label: "Сессия",
                 payload: {
                     command: "categories",
-                    type: "3"}
+                    type: "Сессия"}
             },
+        }],
+        [{
+            action: {
+                type: "text",
+                label: "Моей проблемы нет в списке",
+                payload: {
+                    command: "categories",
+                    type: "Моей проблемы нет в списке"}
+            },
+        }],
+    ]});
+keyboards['resolve_type'] = JSON.stringify({
+    one_time: false,
+    buttons: [
+        [{
+            action: {
+                type: "text",
+                label: "С психологом",
+                payload: {
+                    command: "resolve_type",
+                    type: "psy"}
+            },
+            "color": "positive"
+        }],
+        [{
+            action: {
+                type: "text",
+                label: "С другим человеком",
+                payload: {
+                    command: "resolve_type",
+                    type: "user"}
+            },
+            "color": "positive"
         }],
     ]});
 keyboards['user_choose'] = JSON.stringify({
@@ -141,6 +174,20 @@ keyboards['rating'] = JSON.stringify({
                 }
             },
             "color": "negative"
+        }],
+    ]});
+keyboards['start'] = JSON.stringify({
+    one_time: false,
+    buttons: [
+        [{
+            action: {
+                type: "text",
+                label: "Начать",
+                payload: {
+                    command: "start"
+                }
+            },
+            "color": "positive"
         }],
     ]});
 keyboards[null] = JSON.stringify({

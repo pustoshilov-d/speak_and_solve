@@ -15,7 +15,7 @@ module.exports = async (userId) => {
     var str = "";
 
     for (i in res.rows) {
-        I = parseInt(i)+1;
+        var I = parseInt(i)+1;
         mass.push(res.rows[i].id_vk);
         str = str + `${I}. ${res.rows[i].name} \nКатегория: ${res.rows[i].problem_category} \nПроблема: ${res.rows[i].problem_info}\n\n`
     }

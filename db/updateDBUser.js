@@ -18,7 +18,7 @@ const createPool = require('./dbConnection.js');
 
 
     module.exports = async (userId, field, value) => {
-        const pool = createPool();
+        const pool = await createPool();
 
         if (value === "+1"){
             var sql = `update users set ${field} = ${field} + 1 where (id_vk = ${userId}) and id = (select max(id) from users where id_vk= ${userId})`;

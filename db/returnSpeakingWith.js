@@ -2,7 +2,7 @@ const createPool = require('./dbConnection.js');
 const pg = require('pg');
 
 module.exports = async (userId) => {
-    const pool = createPool();
+    const pool = await createPool();
     var sql = `SELECT speaking_with FROM users WHERE id IN (SELECT max(id) FROM users WHERE id_vk = ${userId})`
 
     try {

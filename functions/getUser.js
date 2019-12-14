@@ -1,4 +1,4 @@
-const {TOKEN} = require('./config');
+const {TOKEN} = require('../config');
 const api = require('vk-easy');
 
 module.exports = async (userId) => {
@@ -6,6 +6,7 @@ module.exports = async (userId) => {
                 user_ids: userId,
                 access_token: TOKEN,
             });
+
     return ans
 };
 
