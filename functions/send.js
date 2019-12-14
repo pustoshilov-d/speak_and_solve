@@ -114,6 +114,28 @@ keyboards['user_choose'] = JSON.stringify({
             },
             "color": "default"
         }],
+        [{
+            action: {
+                type: "text",
+                label: "4",
+                payload: {
+                    command: "user_choose",
+                    type: "4"
+                }
+            },
+            "color": "default"
+        }],
+        [{
+            action: {
+                type: "text",
+                label: "5",
+                payload: {
+                    command: "user_choose",
+                    type: "5"
+                }
+            },
+            "color": "default"
+        }],
     ]});
 keyboards['ok_speaking'] = JSON.stringify({
     one_time: false,
