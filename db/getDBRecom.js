@@ -11,6 +11,5 @@ module.exports = async (problemName) => {
         console.log('ошибка ' + err)
     }
     await pool.end();
-    console.log(res.rows[0].recommendations)
     return res.rows[0].recommendations;
 };
