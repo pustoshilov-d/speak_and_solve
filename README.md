@@ -7,3 +7,5 @@ IDEF0, DFD and ESPD models of software are [there](https://github.com/pustoshilo
 Technological stack: 
 - JavaScript, WebStorm IDE
 - Heroku, PostgreSQL
+
+Usage VK bot: [there](https://vk.com/im?sel=-189695961)
