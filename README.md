@@ -8,4 +8,4 @@ Technological stack:
 - JavaScript, WebStorm IDE
 - Heroku, PostgreSQL
 
-Usage VK bot are [there](https://vk.com/im?sel=-189695961)
+[There](https://vk.com/im?sel=-189695961) is usage VK bot
